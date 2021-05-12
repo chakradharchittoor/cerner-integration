@@ -2,8 +2,11 @@ export default {
   clientId: 'ce6f6a5e-9a97-4ed3-9027-536ccfdae0fb',
   redirectUrl: 'io.identityserver.demo:/oauthredirect',
   scopes: [
+    'user/Patient.write',
     'user/Patient.read',
+    'user/Observation.write',
     'user/Observation.read',
+    'user/Practitioner.read',
     'online_access',
     'profile',
   ],

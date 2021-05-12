@@ -1,0 +1,105 @@
+{
+    "resourceType": "Observation",
+    "status": "Moderate",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ],
+        "text": "Vital Signs"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8331-1"
+        }
+      ],
+      "text": "Temperature Blood Pressure "
+    },
+    "subject": {
+      "reference": "Patient/12457981"
+    },
+    "encounter": {
+      "reference": "Encounter/97845408"
+    },
+    "effectiveDateTime": "2020-04-03T19:21:00.000Z",
+    "issued": "2020-04-03T19:21:40.000Z",
+    "performer": [
+      {
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                  "code": "LA",
+                  "display": "legal authenticator"
+                }
+              ],
+              "text": "legal authenticator"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+          }
+        ],
+        "reference": "Practitioner/11638321"
+      }
+    ],
+    "valueQuantity": {
+      "value": 37.2,
+      "unit": "degC",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ],
+    "note": [
+      {
+        "authorReference": {
+          "reference": "Practitioner/11638321"
+        },
+        "time": "2020-09-03T15:03:10.000Z",
+        "text": "No additional test require"
+      }
+    ],
+    "referenceRange": [
+      {
+        "low": {
+          "value": 35.8,
+          "unit": "degC",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        },
+        "high": {
+          "value": 37.3,
+          "unit": "degC",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+              "code": "normal",
+              "display": "Normal Range"
+            }
+          ],
+          "text": "Normal Range"
+        }
+      }
+    ]
+  }
